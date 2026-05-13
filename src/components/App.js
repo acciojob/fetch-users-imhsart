@@ -44,7 +44,7 @@ const App = () => {
             {userData.length === 0 ? (
               <tr className="empty-row">
                 <td colSpan='4'>
-                  No data found to display.
+                  No data found
                   </td>
                   </tr>
                   ) : 
