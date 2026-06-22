@@ -7,7 +7,6 @@ const App = () => {
   const [userData, setUserData] = useState([])
   const [isLoading, setIsLoading] = useState(false)
 
-
   async function getData(){
     setIsLoading(true)
     try{
@@ -18,10 +17,9 @@ const App = () => {
       })
       let data = response.data.data
       setUserData(data)
+      setIsLoading(false)
     }catch(err){
       console.log(err)
-    }finally{
-      setIsLoading(false)
     }
   }
 
