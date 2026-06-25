@@ -11,9 +11,7 @@ const App = () => {
     setIsLoading(true)
     try{
       let response = await axios.get('https://reqres.in/api/users', {
-        headers:{
-          'x-api-key': 'free_user_3DfqCqCi70z6cugeCqzBROzwXZB'
-        }
+        headers:{'x-api-key': 'free_user_3DfqCqCi70z6cugeCqzBROzwXZB'}
       })
       let data = response.data.data
       setUserData(data)
