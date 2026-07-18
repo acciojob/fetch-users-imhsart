@@ -17,7 +17,7 @@ const App = () => {
       setUserData(data)
       setIsLoading(false)
     }catch(err){
-      console.log(err)
+      console.log('Error:',err)
     }
   }
 
